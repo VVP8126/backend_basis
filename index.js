@@ -15,6 +15,7 @@ const application = express();
 application.use(express.json());
 application.use("/api", router);
 application.use(fileUpload({}));
+// application.use(express.static("static"));   - way to define static location (for files, pictures)
 
 async function runExample() {
     try {
